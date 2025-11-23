@@ -1,0 +1,68 @@
+1) FONCTIONS 
+
+if cond:
+    ...
+elif autre_cond:
+    ...
+else:
+    ...
+
+for x in iterable:
+    ...
+
+while cond:
+    ...
+
+def f(x, y=0):
+    return x + y
+
+2. NumPy – bases à connaître
+
+2.1) Création de tableaux
+
+import numpy as np
+
+a = np.array([1, 2, 3])
+Z = np.zeros((3, 3))
+O = np.ones((2, 2))
+R = np.random.randn(100)     # loi normale
+I = np.eye(3)                # matrice identité
+
+
+2.2) Stats / fonctions utiles
+a.mean()
+a.std()
+a.sum()
+a.min(); a.max()
+np.percentile(a, 95)
+np.sort(a)
+
+3) Pandas 
+
+Import pandas as pd 
+
+3.1) Importer des données 
+
+pd.read_excel
+pd.read_xlsx
+pd.read_csv
+pd.read(HTML_LINK)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
