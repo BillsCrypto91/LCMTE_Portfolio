@@ -72,6 +72,31 @@ df[['Pregnancies', 'Outcome']] --> Isolement de deux colonnes ou plus à l'aide 
 
 
 
+4) Nettoyage de données 
+
+4.1) Gestion données en double 
+duplicates = df[df.duplicated()]
+df.drop_duplicates --> enlève les données en double.
+N.B : Quand on enlève une ligne, l'indexation ne change pas. En effet, imaginons que python nous indique un doublon en ligne 3. Après utilisation de la fonction drop_duplicates --> la ligne 3 disparait donc l'indexation est comme suit : 1,2,4,5,6 etc.
+Pour résoudre le problème on réinitialise l'indexation à 0 avec la fonction --> df = df.reset_index(drop=True) en précisant drop=True car nous avons effectué des modifications sur le jeu de données.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
