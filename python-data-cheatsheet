@@ -48,7 +48,27 @@ pd.read_xlsx
 pd.read_csv
 pd.read(HTML_LINK)
 
+3.2) Visualiser des données 
 
+Let's imagine you just imported your excel file and store it into a variable called df.
+
+Some operations with pandas : 
+
+df.head()
+df.tail()
+df.describe()
+df.describe(percentiles=[0.3, 0.5, 0.7])
+df.describe(include=[int])
+df.describe(exclude=[int])
+df.describe().T --> Visualisation plus simple car transpose le jeu de données.
+df.info(show_counts=True, memory_usage=True, verbose=True) --> Donne des infos sur les variables du jeu de données (show_counts = donne quelques valeurs sur le total des valeurs non manquantes dans chaque colonne.)
+df.columns--> renvoie le nom de chaque colonne du jeu de données. 
+list(df.columns) --> On peut convertir les noms des colonnes en list.
+df2.isnull().sum() --> Pour vérifier le volume de données manquantes dans notre jeu de données.
+df.sort_values(by="Age", ascending=False, inplace=True)  # Sort by Age in descending order
+df.sort_values(by=["Age", "Glucose"], ascending=[False, True], inplace=True) --> trie le jeu de données sur plusieurs colonnes.
+df[df["BloodPressure"] > 100]  # Selects rows where BloodPressure is greater than 100 --> filtrer des données en fonction d'une condition préalable.
+df[['Pregnancies', 'Outcome']] --> Isolement de deux colonnes ou plus à l'aide de [[ ]] 
 
 
 
